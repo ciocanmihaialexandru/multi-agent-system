@@ -1,0 +1,18 @@
+# Environment
+.env
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Data (prea mare pentru git)
+# data/*.dump  # decomentează dacă nu vrei dump-ul în git
+
+# Alembic
+*.db
+
+# Date mari — nu pe GitHub (se obțin din dump/scripts)
+data/rag_demo.dump
+data/documents-sql/*.xlsx
