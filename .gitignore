@@ -15,4 +15,4 @@ __pycache__/
 
 # Date mari — nu pe GitHub (se obțin din dump/scripts)
 data/rag_demo.dump
-data/documents-sql/*.xlsx
+data/documents-sql/achizitiidirecte2018t2.xlsx

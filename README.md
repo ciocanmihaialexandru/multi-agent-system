@@ -47,6 +47,7 @@ Două sisteme:
 4. Dacă NU → trimite feedback, RAG Agent rafinează și caută din nou
 5. Dacă DA → generează răspuns final
 
+
 **Prompturi:** `rag_evaluate.yaml`, `rag_answer.yaml`, `rag_refine.yaml`
 
 ### 2. Analyst + NL2SQL (Hierarchical Multi-Agent)
@@ -106,6 +107,17 @@ Două sisteme:
 5. `handle_error` - dacă eroare, LLM corectează SQL și retry
 
 **Prompturi:** `analyst_plan.yaml`, `analyst_synthesize.yaml`, `nl2sql_generate.yaml`, `nl2sql_error.yaml`
+
+## ⚠️ Fișiere mari (NU sunt în repo)
+ 
+Două fișiere de date depășesc limita de 100 MB a GitHub, așa că sunt excluse
+din repo (prin `.gitignore`) și **trebuie adăugate manual după clonare**.
+Nu folosim Git LFS — fișierele se obțin din arhiva de curs.
+ 
+| Fișier | Cale | Mărime |
+|--------|------|--------|
+| Date achiziții (sursă) | `data/documents-sql/achizitiidirecte2018t2.xlsx` | ~184 MB |
+| Dump bază de date (chunks + tabele) | `data/rag_demo.dump` | ~120 MB |
 
 ## Setup
 
